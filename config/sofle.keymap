@@ -4,11 +4,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define DEFAULT 0
-#define LOWER   1
-#define RAISE   2
-#define ADJUST  3
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -16,7 +11,7 @@
         combo_adjust {
             timeout-ms = <50>;
             key-positions = <54 57>;
-            bindings = <&mo ADJUST>;
+            bindings = <&mo 3>;
             layers = <-1>;
         };
     };
@@ -26,11 +21,11 @@
 
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  `          |  1  |  2   |  3  |  4  |  5   |                  |  6   |  7  |  8  |  9   |  0  |          |
-// |  TAB        |  Q  |  W   |  E  |  R  |  T   |                  |  Y   |  U  |  I  |  O   |  P  | BKSPC    |
-// | ESC (LCTRL) |  A  |  S   |  D  |  F  |  G   |                  |  H   |  J  |  K  |  L   |  ;  | ' (RCMD) |
-// | SHIFT       |  Z  |  X   |  C  |  V  |  B   | MUTE  |  |       |  N   |  M  |  ,  |  .   |  /  | SHIFT    |
-//                     | CTRL | ALT | CMD | LOWER| SPACE |  | ENTER | RAISE| CMD | ALT | CTRL |
+// |  `          |  1  |  2   |  3  |  4  |  5  |                  |  6  |  7  |  8  |  9   |  0  |          |
+// |  TAB        |  Q  |  W   |  E  |  R  |  T  |                  |  Y  |  U  |  I  |  O   |  P  | BKSPC    |
+// | ESC (LCTRL) |  A  |  S   |  D  |  F  |  G  |                  |  H  |  J  |  K  |  L   |  ;  | ' (RCMD) |
+// | SHIFT       |  Z  |  X   |  C  |  V  |  B  | MUTE  |  |       |  N  |  M  |  ,  |  .   |  /  | SHIFT    |
+//                     | CTRL | ALT | CMD | LWR | SPACE |  | ENTER | RSE | CMD | ALT | CTRL |
             bindings = <
 &kp GRAVE     &kp N1 &kp N2    &kp N3   &kp N4   &kp N5                      &kp N6 &kp N7   &kp N8    &kp N9   &kp N0   &kp MINUS
 &kp TAB       &kp Q  &kp W     &kp E    &kp R    &kp T                       &kp Y  &kp U    &kp I     &kp O    &kp P    &kp BSPC
@@ -69,8 +64,8 @@
 //              |      |       |       |      |      |  |      |        |      |      |        |
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans     &trans    &trans    &trans     &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp PG_UP  &trans    &kp UP    &trans     &kp N0   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp PG_UP  &trans    &trans    &kp PG_DN  &trans   &kp DEL
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT  &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans    &trans    &trans     &trans   &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans    &trans    &trans
             >;
