@@ -67,12 +67,12 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans       &trans    &trans    &trans        &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &kp LA(LEFT) &trans    &trans    &kp LA(RIGHT) &trans  &kp DEL
-&trans  &kp LS(LA(C_VOL_UP))  &kp LS(LA(C_VOL_DOWN))  &trans  &trans  &trans                  &kp LEFT     &kp DOWN  &kp UP    &kp RIGHT     &trans  &trans
+&trans  &kp LS(LA(K_VOL_UP))  &kp LS(LA(K_VOL_DOWN))  &trans  &trans  &trans                  &kp LEFT     &kp DOWN  &kp UP    &kp RIGHT     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME     &kp PG_DN &kp PG_UP &kp END       &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LS(LA(C_VOL_UP)) LS(LA(C_VOL_DN)) &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp LS(LA(K_VOL_UP)) LS(LA(K_VOL_DN)) &inc_dec_kp PG_UP PG_DN>;
         };
 
         adjust_layer {
