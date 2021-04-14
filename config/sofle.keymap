@@ -36,7 +36,7 @@
                        &kp LCTRL  &kp LALT  &kp LCMD  &mo 1   &kp SPACE    &kp RET  &mo 2   &kp RCMD  &mt LS(LC(LA(LCMD))) LBKT   &mt LS(LC(LALT)) RBKT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LC(LA(LEFT)) LC(LA(RIGHT))>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LC(LA(RIGHT)) LC(LA(LEFT))>;
         };
 
         lower_layer {
