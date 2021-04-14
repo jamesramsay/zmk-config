@@ -72,18 +72,18 @@
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LS(LA(K_VOL_UP)) LS(LA(K_VOL_DN)) &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp LS(LC(LA(UP))) LS(LC(LA(DOWN))) &inc_dec_kp PG_UP PG_DN>;
         };
 
         adjust_layer {
 // ------------------------------------------------------------------------------------------------------------
-// | OUTPUT |      |      |       |       |      |                |      |      |      |      |  |      |
+// | OUT |      |      |       |       |      |                |      |      |      |      |  |      |
 // |     |      |      |       |       |      |                |      | BRUP | BRDN |      |  |      |
 // |     |      |      |       |       |      |                | PREV |      |      | NEXT |  | PLAY |
 // |     |      |      |       |       |      |      |  |      |      |      |      |      |  |      |
 //              |      |       |       |      |      |  |      |      |      |      |      |
             bindings = <
-&out OUT_TOG  &trans  &trans  &trans  &trans  &trans                  &trans     &trans       &trans        &trans     &trans  &trans
+&out OUT_TOG  &trans  &trans  &trans  &trans  &trans            &trans     &trans       &trans        &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans     &kp C_BRI_DN &kp C_BRI_UP  &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &kp C_PREV &trans       &trans        &kp C_NEXT &trans  &kp C_PP
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans       &trans        &trans     &trans  &trans
