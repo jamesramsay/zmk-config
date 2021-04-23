@@ -17,6 +17,10 @@
     };
 };
 
+&mt {
+    retro-tap;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
