@@ -81,17 +81,17 @@
 
         adjust_layer {
 // ------------------------------------------------------------------------------------------------------------
-// | OUT |     |     |     |     |     |                |      |      |      |      |    |      |
-// |     |     |     |     |     |     |                |      | BRUP | BRDN |      |    |      |
+// | CLR | BT0 | BT1 | BT2 | BT3 | BT4 |                |      |      |      |      |    |      |
+// | OUT |     |     |     |     |     |                |      | BRUP | BRDN |      |    |      |
 // |     |     |     |     |     |     |                | PREV |      |      | NEXT |    | PLAY |
 // |     |     |     |     |     |     |      |  |      |      |      |      |      |    |      |
 //             |     |     |     |     |      |  |      |      |      |      |      |
             bindings = <
-&out OUT_TOG  &trans  &trans  &trans  &trans  &trans            &trans     &trans       &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans     &kp C_BRI_DN &kp C_BRI_UP  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp C_PREV &trans       &trans        &kp C_NEXT &trans  &kp C_PP
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans       &trans        &trans     &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans       &trans        &trans
+&bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                  &trans  &trans  &trans  &trans  &trans  &trans
+&out OUT_TOG &trans  &trans   &trans   &trans  &trans                  &trans     &kp C_BRI_DN &kp C_BRI_UP  &trans     &trans  &trans
+&trans       &trans  &trans   &trans   &trans  &trans                  &kp C_PREV &trans       &trans        &kp C_NEXT &trans  &kp C_PP
+&trans       &trans  &trans   &trans   &trans  &trans  &trans  &trans  &trans     &trans       &trans        &trans     &trans  &trans
+                     &trans   &trans   &trans  &trans  &trans  &trans  &trans     &trans       &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
