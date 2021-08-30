@@ -1,11 +1,21 @@
 manifest:
   remotes:
     - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: stephen
       url-base: https://github.com/stephen
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
+    - name: xwu
+      url-base: https://github.com/xwu
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: stephen/split-encoder
+      # remote: stephen
+      # revision: stephen/split-encoder
+      # remote: petejohanson
+      # revision: ble/defer-connection-param-upgarade-while-pairing
+      remote: xwu
+      revision: macos-pairing
       import: app/west.yml
   self:
     path: config
