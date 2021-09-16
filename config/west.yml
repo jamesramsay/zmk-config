@@ -13,8 +13,8 @@ manifest:
       # remote: stephen
       # revision: stephen/split-encoder
       remote: petejohanson
-      # revision: ble/defer-connection-param-upgarade-while-pairing
-      revision: ble/hog-characteristic-perm-tweaks-macos
+      revision: ble/defer-connection-param-upgarade-while-pairing
+      # revision: ble/hog-characteristic-perm-tweaks-macos
       # remote: xwu
       # revision: macos-pairing
       import: app/west.yml
