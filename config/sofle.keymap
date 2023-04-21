@@ -25,15 +25,6 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <28 31>;
-            bindings = <&caps_word>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -111,10 +102,10 @@
 // |     |       | RALT  |       |       |     |      |  |      | HOME | PGDN | PGUP | END  | INS  |     |
 //               |       |       |       |     |      |  |      |      |      |      |      |
             bindings = <
-&none  &none      &none     &none     &none      &none                  &none     &none      &none      &none      &none     &none
-&none  &none      &none     &none     &none      &none                  &none     &none      &none      &none      &none     &none
-&none  &kp LCTRL  &kp LALT  &kp LCMD  &kp LSHFT  &none                  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp CAPS  &none
-&none  &none      &kp RALT  &none     &none      &none  &none   &none   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp INS   &none
+&none  &none      &none     &none     &none      &none                  &none     &none      &none      &none      &none       &none
+&none  &none      &none     &none     &none      &none                  &none     &none      &none      &none      &none       &none
+&none  &kp LCTRL  &kp LALT  &kp LCMD  &kp LSHFT  &none                  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &caps_word  &none
+&none  &none      &kp RALT  &none     &none      &none  &none   &none   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp INS     &none
                   &none     &none     &none      &none  &none   &none   &none     &none      &none      &none
             >;
         };
