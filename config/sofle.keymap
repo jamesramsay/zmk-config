@@ -41,7 +41,7 @@
 &none           &kp Q        &kp W       &kp E       &kp R        &kp T                                              &kp Y           &kp U          &kp I       &kp O       &kp P           &kp BACKSLASH
 &none           &hm LCTRL A  &hm LALT S  &hm LCMD D  &hm LSHFT F  &kp G                                              &kp H           &hm LSHFT J    &hm LCMD K  &hm LALT L  &hm LCTRL SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z        &kp X       &kp C       &kp V        &kp B            &kp C_MUTE         &none          &kp N           &kp M          &kp COMMA   &kp DOT     &kp FSLH        &kp RIGHT_SHIFT
-                             &none       &none       &kp ESC      &lt L_NAV SPACE  &lt L_MEDIA TAB    &lt L_SYM RET  &lt L_NUM BSPC  &lt L_FUN DEL  &none       &kp LS(LC(LA(LGUI(Z)))
+                             &none       &none       &kp ESC      &lt L_NAV SPACE  &lt L_MEDIA TAB    &lt L_SYM RET  &lt L_NUM BSPC  &lt L_FUN DEL  &none       &kp LS(LC(LA(Z)))
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_UP C_BRI_DN>;
